@@ -285,7 +285,6 @@ LOJA_CNPJ_NULO = cupom.Loja(NOME_LOJA, ENDERECO_COMPLETO, TELEFONE,
 LOJA_CNPJ_VAZIO = cupom.Loja(NOME_LOJA, ENDERECO_COMPLETO, TELEFONE,
                              OBSERVACAO, "", INSCRICAO_ESTADUAL)
 
-
 def test_valida_cnpj():
     verifica_campo_obrigatorio_objeto(
         "O campo CNPJ da loja é obrigatório", LOJA_CNPJ_VAZIO)
@@ -297,7 +296,6 @@ LOJA_IE_NULA = cupom.Loja(NOME_LOJA, ENDERECO_COMPLETO, TELEFONE,
                           OBSERVACAO, CNPJ, None)
 LOJA_IE_VAZIA = cupom.Loja(NOME_LOJA, ENDERECO_COMPLETO, TELEFONE,
                            OBSERVACAO, CNPJ, "")
-
 
 def test_valida_inscricao_estadual():
     verifica_campo_obrigatorio_objeto(
@@ -320,7 +318,6 @@ Obs 1
 CNPJ: 11.111.111/1111-11
 IE: 123456789'''
 
-
 def test_valida_numero_e_complemento():
     assert LOJA_SEM_NUMERO_SEM_COMPLEMENTO.dados_loja() == TEXTO_ESPERADO_SEM_NUMERO_SEM_COMPLEMENTO
 
@@ -341,10 +338,8 @@ Obs 1
 CNPJ: 11.111.111/1111-11
 IE: 123456789'''
 
-
 def test_valida_numero_complemento_e_bairro():
     assert LOJA_SEM_NUMERO_SEM_COMPLEMENTO_SEM_BAIRRO.dados_loja() == TEXTO_ESPERADO_SEM_NUMERO_SEM_COMPLEMENTO_SEM_BAIRRO
-
 
 def test_exercicio2_customizado():
 

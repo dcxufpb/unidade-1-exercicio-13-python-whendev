@@ -40,7 +40,6 @@ class Endereco:
 {_BAIRRO}{self.municipio} - {self.estado}
 {_CEP}'''
 
-
 class Loja:
   
   def __init__(self, nome_loja, endereco, telefone, observacao, cnpj, 
