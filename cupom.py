@@ -118,4 +118,6 @@ class Venda:
   def imprime_cupom(self):
     _dadosLoja = self.loja.dados_loja()
     _dadosVenda = self.dados_venda()
-    return f'''{_dadosLoja}\n------------------------------\n{_dadosVenda}'''
+    return f'''{_dadosLoja}
+------------------------------
+{_dadosVenda}'''
